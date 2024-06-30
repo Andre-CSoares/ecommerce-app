@@ -27,4 +27,8 @@ Se você deseja contribuir com este projeto, siga estas etapas:
 + Faça push para a branch (git push origin feature/nova-funcionalidade).
 + Abra um Pull Request.
 + Licença
+<<<<<<< HEAD
 + Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
+=======
++ Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
+>>>>>>> 7d6f39dc039f70d2c69fd19e32a61bdd69dc16f3
