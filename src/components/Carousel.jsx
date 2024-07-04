@@ -44,26 +44,39 @@ const Carousel = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 6,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
   };
 
   return (
-    <div className="w-full max-w-2xl mx-auto mt-8 relative">
+    <div className="w-full mt-8 relative">
       <h2 className="text-2xl font-bold text-center mb-4">More Products</h2>
       <Slider {...settings} className="rounded-lg shadow-lg overflow-hidden">
-        <div className="px-4">
-          <img src="https://via.placeholder.com/600x400" alt="Slide 1" className="w-full h-auto" />
+        <div className="h-60 w-36 flex flex-col justify-center items-center">
+          <div className="rounded-md shadow-2xl bg-white h-60 w-40 flex justify-center py-4 px-4"><p>Product</p></div>
         </div>
-        <div className="px-4">
-          <img src="https://via.placeholder.com/600x400" alt="Slide 2" className="w-full h-auto" />
+        <div className="h-60 w-36 flex flex-col justify-center items-center">
+          <div className="rounded-md shadow-2xl bg-white h-60 w-40 flex justify-center py-4 px-4"><p>Product</p></div>
         </div>
-        <div className="px-4">
-          <img src="https://via.placeholder.com/600x400" alt="Slide 3" className="w-full h-auto" />
+        <div className="h-60 w-36 flex flex-col justify-center items-center">
+          <div className="rounded-md shadow-2xl bg-white h-60 w-40 flex justify-center py-4 px-4"><p>Product</p></div>
+        </div>
+        <div className="h-60 w-36 flex flex-col justify-center items-center">
+          <div className="rounded-md shadow-2xl bg-white h-60 w-40 flex justify-center py-4 px-4"><p>Product</p></div>
+        </div>
+        <div className="h-60 w-36 flex flex-col justify-center items-center">
+          <div className="rounded-md shadow-2xl bg-white h-60 w-40 flex justify-center py-4 px-4"><p>Product</p></div>
+        </div>
+        <div className="h-60 w-36 flex flex-col justify-center items-center">
+          <div className="rounded-md shadow-2xl bg-white h-60 w-40 flex justify-center py-4 px-4"><p>Product</p></div>
+        </div>
+        <div className="h-60 w-36 flex flex-col justify-center items-center">
+          <div className="rounded-md shadow-2xl bg-white h-60 w-40 flex justify-center py-4 px-4"><p>Product</p></div>
+        </div>
+        <div className="h-60 w-36 flex flex-col justify-center items-center">
+          <div className="rounded-md shadow-2xl bg-white h-60 w-40 flex justify-center py-4 px-4"><p>Product</p></div>
         </div>
       </Slider>
     </div>

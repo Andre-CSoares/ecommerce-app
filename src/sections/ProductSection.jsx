@@ -1,4 +1,5 @@
 import Carousel from '../components/Carousel';
+import LastSearch from '../components/LastSearch';
 import ProductList from '../components/ProductList';
 
 const ProductSection = () => {
@@ -7,6 +8,7 @@ const ProductSection = () => {
             <div className="flex flex-col justify-start items-center w-full max-xl:padding-x pt-28">
                 <ProductList numberOfCards={6} />
                 <Carousel />
+                <LastSearch />
             </div>
 
         </section>
