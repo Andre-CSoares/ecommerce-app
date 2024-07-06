@@ -39,47 +39,29 @@ const PrevArrow = ({ onClick }) => (
   </button>
 );
 
-const Carousel = () => {
+const Carousel = ({ carousel = [] }) => {
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 6,
+    slidesToShow: 1,
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
   };
 
   return (
-    <div className="w-full mt-8 relative">
-      <h2 className="text-2xl font-bold text-center mb-4">More Products</h2>
-      <Slider {...settings} className="rounded-lg shadow-lg overflow-hidden">
-        <div className="h-60 w-36 flex flex-col justify-center items-center">
-          <div className="rounded-md shadow-2xl bg-white h-60 w-40 flex justify-center py-4 px-4"><p>Product</p></div>
+    <div className="w-full mt-8 mb-16 relative z-0">
+    <Slider {...settings} className="shadow-lg overflow-hidden">
+      {carousel.map((content, index) => (
+        <div key={index} className="w-full">
+          <a href={content.link} target='_blank' rel='noopener noreferrer'>
+            <img className="w-full h-64 object-cover" src={content.image} alt={content.title} />
+          </a>
         </div>
-        <div className="h-60 w-36 flex flex-col justify-center items-center">
-          <div className="rounded-md shadow-2xl bg-white h-60 w-40 flex justify-center py-4 px-4"><p>Product</p></div>
-        </div>
-        <div className="h-60 w-36 flex flex-col justify-center items-center">
-          <div className="rounded-md shadow-2xl bg-white h-60 w-40 flex justify-center py-4 px-4"><p>Product</p></div>
-        </div>
-        <div className="h-60 w-36 flex flex-col justify-center items-center">
-          <div className="rounded-md shadow-2xl bg-white h-60 w-40 flex justify-center py-4 px-4"><p>Product</p></div>
-        </div>
-        <div className="h-60 w-36 flex flex-col justify-center items-center">
-          <div className="rounded-md shadow-2xl bg-white h-60 w-40 flex justify-center py-4 px-4"><p>Product</p></div>
-        </div>
-        <div className="h-60 w-36 flex flex-col justify-center items-center">
-          <div className="rounded-md shadow-2xl bg-white h-60 w-40 flex justify-center py-4 px-4"><p>Product</p></div>
-        </div>
-        <div className="h-60 w-36 flex flex-col justify-center items-center">
-          <div className="rounded-md shadow-2xl bg-white h-60 w-40 flex justify-center py-4 px-4"><p>Product</p></div>
-        </div>
-        <div className="h-60 w-36 flex flex-col justify-center items-center">
-          <div className="rounded-md shadow-2xl bg-white h-60 w-40 flex justify-center py-4 px-4"><p>Product</p></div>
-        </div>
-      </Slider>
-    </div>
+      ))}
+    </Slider>
+  </div>
   );
 };
 

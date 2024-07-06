@@ -3,10 +3,11 @@ import Offerts from './components/Offerts';
 import ProductSection from './sections/ProductSection';
 
 const App = () => (
-  <main className="relative">
+  <main>
     <Nav />
+    
     <section className="xl:padding-l wide:padding-r padding-b">
-      <ProductSection />
+      <ProductSection carousel={carousel} />
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-3xl font-bold mb-8 text-center">Our Daily Offerts</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -25,6 +26,24 @@ const App = () => (
     </section>
   </main>
 );
+
+const carousel = [
+  {
+    image: 'https://via.placeholder.com/150',
+    link: 'https://www.mercadolivre.com.br/',
+    title: 'Carrosel Exemplo 1'
+  },
+  {
+    image: 'https://via.placeholder.com/150',
+    link: 'https://www.mercadolivre.com.br/',
+    title: 'Carrosel Exemplo 2'
+  },
+  {
+    image: 'https://via.placeholder.com/150',
+    link: 'https://www.mercadolivre.com.br/',
+    title: 'Carrosel Exemplo 3'
+  }
+];
 
 const offers = [
   {
