@@ -1,4 +1,5 @@
 import Carousel from '../components/Carousel';
+import Interest from '../components/Interests';
 import LastSearch from '../components/LastSearch';
 import ProductList from '../components/ProductList';
 
@@ -39,11 +40,27 @@ const ProductSection = () => {
         },
     ];
 
+    const interest = [
+        {
+            image: 'https://via.placeholder.com/150',
+            title: 'Título do Produto 1',
+            originalPrice: 100,
+            banner: 'Visto recentemente'
+        },
+        {
+            image: 'https://via.placeholder.com/150',
+            title: 'Título do Produto 2',
+            originalPrice: 200,
+            banner: 'Também te interessa'
+        },
+    ];
+
     return (
         <section id="home" className="w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container">
             <div className="flex flex-col justify-start items-center w-full max-xl:padding-x pt-28">
                 <Carousel carousel={carousel} />
                 <ProductList numberOfCards={6} />
+                <Interest interest={interest}/>
                 <LastSearch products={products} />
             </div>
 
