@@ -9,9 +9,12 @@ const LastSearch = ({ products }) => {
                         <div className="px-6 py-4">
                             <div className="font-bold text-xl mb-2">{product.title}</div>
                             <div className="flex items-baseline">
-                                <span className="text-red-600 font-bold">R${product.originalPrice}</span>
+                                <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mt-3">
+                                    <span className="text-red-600 font-bold">R${product.originalPrice}</span>
+                                    <button className="bg-red-500 text-white rounded-lg hover:bg-red-700 p-2 transition-all duration-300">Comprar</button>
+                                </div>
                             </div>
-                            
+
                         </div>
                     </div>
                 ))}

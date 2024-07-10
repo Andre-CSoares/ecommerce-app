@@ -17,13 +17,17 @@ const Interest = ({ interest }) => {
                                         Frete grátis
                                     </span>
                                 </div>
-                                <button className="bg-blue-500 text-white rounded-lg hover:bg-blue-700 transition-all duration-300">Comprar</button>
+                                <button className="bg-red-500 text-white rounded-lg hover:bg-red-700 transition-all duration-300">Comprar</button>
                             </div>
                         </div>
                     </div>
                 ))}
             </div>
         </>
+
+
+
+
     )
 }
 
