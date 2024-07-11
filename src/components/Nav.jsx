@@ -4,6 +4,7 @@ import cartIcon from '../assets/icons/cart.svg';
 import userIcon from '../assets/icons/user.svg';
 import notificationIcon from '../assets/icons/notification.svg';
 import { navLinks } from '../constants';
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
     return (
