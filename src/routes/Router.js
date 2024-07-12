@@ -1,15 +1,16 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import App from "../App";
+import { BrowserRouter, createBrowserRouter } from "react-router-dom";
 
-const AppRoutes = () => {
-    return (
-        <Router>
-            <Routes>
-                <Route path="/" element={<App />} />
-            </Routes>
-        </Router>
-    );
-};
-
-export default AppRoutes;
+const router = createBrowserRouter([
+    {
+        path: '/user',
+        element: <Usuario />
+    },
+    {
+        path: '/cart',
+        element: <Carrinho />
+    },
+    {
+        path: '/product',
+        element: <Produto />
+    }
+])
