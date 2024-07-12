@@ -6,7 +6,6 @@ Este é um projeto de e-commerce desenvolvido com React Remix para roteamento e 
 
 ### Funcionalidades
 
-+ 🚀 Navegação entre páginas utilizando React Remix.
 + 🗺️ Consulta de localização de endereço através de APIs.
 + 💳 Processamento de pagamentos com integração de APIs de pagamento.
 + Tecnologias Utilizadas
